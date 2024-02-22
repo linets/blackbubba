@@ -129,7 +129,9 @@
               endif
             -%}
             {% comment %}{%- if card_product.variants.size > 1 or qty_rules -%}{%- endif -%}{% endcomment %}
-            {%- if card_product.options_with_values.size > 1 -%}
+            {%- if card_product.options_with_values.size > 1
+              or card_product.options_with_values.first.name == 'Tamaño'
+            -%}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button
                   id="{{ product_form_id }}-submit"
