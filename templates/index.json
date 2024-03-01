@@ -31,8 +31,8 @@
         "slide_kb6hxF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider-GetReady.png",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_a452be3d-8501-481f-8864-649f31781e7b.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_f2c50e12-5c56-4b5c-b1b2-c3e0249fdc11.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
@@ -190,7 +190,7 @@
           "type": "featured_collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/Esenciales_425x595_0d27c206-58ab-4532-9fa3-56ae9a688122.jpg",
-            "title": "ESENCIALES",
+            "title": "BOTELLAS Y MUGS",
             "url": "shopify:\/\/collections\/drinkware"
           }
         },
@@ -213,9 +213,9 @@
         "c2263196-b278-46ae-8511-559ade5f8c9d": {
           "type": "featured_collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Travel_425x595_7adcc65c-6ab1-42ac-9d8c-e20e1d90ab6a.jpg",
+            "image": "shopify:\/\/shop_images\/TRAVEL.png",
             "title": "TRAVEL",
-            "url": "shopify:\/\/collections\/maletas-y-bolsos"
+            "url": "shopify:\/\/collections\/travel"
           }
         }
       },
