@@ -46,7 +46,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".mega-menu__content {margin-top: -1pc; padding-top: 6px; }"
+
       ],
       "settings": {
         "logo_position": "middle-left",
