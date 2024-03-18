@@ -137,7 +137,7 @@
         "slide_wB9RPK"
       ],
       "custom_css": [
-        ".button,.shopify-challenge__button,.customer button {border: white 1px solid; background-color: rgb(18 18 18 \/ 0%); --border-offset: none;}"
+
       ],
       "settings": {
         "layout": "full_bleed",
