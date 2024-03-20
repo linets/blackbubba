@@ -137,7 +137,7 @@
         "slide_wB9RPK"
       ],
       "custom_css": [
-
+        ".slideshow__text .banner__buttons {width: 300px;}"
       ],
       "settings": {
         "layout": "full_bleed",
