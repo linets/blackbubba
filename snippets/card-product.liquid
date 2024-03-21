@@ -44,13 +44,14 @@
                           {% if variantAvailable %}
                               {% assign colorToShow = variant.metafields.custom.color %}
                           {% endif %}
+                          {% assign colorVariant = "" | append: variant.metafields.custom.color %}
                           <li
                               data-discount="{% if variant.compare_at_price %}{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round: 0 }}{% endif %}"
                               data-featured-img="{{ variant.featured_media }}"
                               data-second-img="{% for media in variant.metafields.custom.media.value %}{{ media }}{% break %}{% endfor %}"
                               style="background: {{ variant.metafields.custom.color }};"
                               onClick="validateVariantSelected(this, {{ variant.id }})"
-                              class="available-{{ variantAvailable }}"
+                              class="available-{{ variantAvailable }}{% if colorVariant == "#ffffff" %} white-label{% endif %}"
                           ></li>
                       {% endif %}
                   {% endunless %}
