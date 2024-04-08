@@ -82,7 +82,7 @@
           | divided_by: variant.compare_at_price
           | round: 0
         %}
-        <span class="badge-discount">-{{ discount_percent }}%</span>
+        <span class="badge-discount active">-{{ discount_percent }}%</span>
       {% endif %}
     {%- else -%}
       {%- if card_product -%}
@@ -93,7 +93,9 @@
             | divided_by: card_product.variants[0].compare_at_price
             | round: 0
           %}
-          <span class="badge-discount">-{{ discount_percent }}%</span>
+          <span class="badge-discount active">-{{ discount_percent }}%</span>
+        {%- else -%}
+          <span class="badge-discount"></span>
         {%- endif -%}
       {%- endif -%}
     {%- endif -%}
@@ -648,6 +650,15 @@
   function validateVariantSelected(e, id) {
     let quick_add_parent = e.parentElement.parentElement.parentElement.parentElement.parentElement;
     let elements = quick_add_parent.getElementsByClassName('product-variant-id');
+
+    let newSpanContainer = quick_add_parent.parentElement;
+    let badgeDiscount = newSpanContainer.querySelector('.badge-discount');
+    if (e.dataset.discount) {
+      badgeDiscount.innerText = '-' + e.dataset.discount + '%';
+      badgeDiscount.classList.add('active');
+    } else {
+      badgeDiscount.classList.remove('active');
+    }
 
     for (let x = 0; x <= elements.length; x++) {
       if (elements[x] != undefined) {
