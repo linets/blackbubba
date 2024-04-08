@@ -6,14 +6,14 @@
         "slide_kb6hxF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_1.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_2.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
-            "button_label": "VER TODO",
+            "button_label": "",
             "link": "shopify:\/\/collections\/fw24",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "rgba(0,0,0,0)",
