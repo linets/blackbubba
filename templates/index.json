@@ -6,8 +6,8 @@
         "slide_kb6hxF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_c1f4cbd7-b7d2-4167-933f-28f361f1b3db.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_bab0a74a-5733-4941-8412-b7ac83875e26.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_1.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
@@ -80,6 +80,7 @@
         },
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/BannerPERFUME2.jpg",
             "image_mobile": "shopify:\/\/shop_images\/BannerPERFUME1.jpg",
