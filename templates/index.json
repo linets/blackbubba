@@ -3,6 +3,31 @@
     "3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c": {
       "type": "slideshow",
       "blocks": {
+        "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Slider_Zapatillas.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_ZapatillasM.jpg",
+            "desktop_video": "",
+            "mobile_video": "",
+            "tag": "",
+            "heading": "",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/zapatillas",
+            "btn_color_text": "#ffffff",
+            "btn_color_bg": "#000000",
+            "btn_color_border": "#ffffff",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "box_max_width": 100,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_kb6hxF": {
           "type": "slide",
           "settings": {
@@ -20,31 +45,6 @@
             "btn_color_border": "#ffffff",
             "button_style_secondary": true,
             "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "box_max_width": 100,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_GxC9fH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_39a1610a-bebf-467b-8e43-646a3c53bc3e.jpg",
-            "desktop_video": "",
-            "mobile_video": "",
-            "tag": "",
-            "heading": "",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/mochilas-de-deporte",
-            "btn_color_text": "#ffffff",
-            "btn_color_bg": "#ffffff",
-            "btn_color_border": "#ffffff",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -78,32 +78,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_Zapatillas.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_ZapatillasM.jpg",
-            "desktop_video": "",
-            "mobile_video": "",
-            "tag": "",
-            "heading": "",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/zapatillas",
-            "btn_color_text": "#ffffff",
-            "btn_color_bg": "#000000",
-            "btn_color_border": "#ffffff",
-            "button_style_secondary": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "box_max_width": 100,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_wB9RPK": {
           "type": "slide",
           "settings": {
@@ -128,14 +102,40 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_GxC9fH": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_39a1610a-bebf-467b-8e43-646a3c53bc3e.jpg",
+            "desktop_video": "",
+            "mobile_video": "",
+            "tag": "",
+            "heading": "",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/mochilas-de-deporte",
+            "btn_color_text": "#ffffff",
+            "btn_color_bg": "#ffffff",
+            "btn_color_border": "#ffffff",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "box_max_width": 100,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "slide_kb6hxF",
-        "slide_GxC9fH",
-        "slide_jhrcNK",
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1",
-        "slide_wB9RPK"
+        "slide_kb6hxF",
+        "slide_jhrcNK",
+        "slide_wB9RPK",
+        "slide_GxC9fH"
       ],
       "custom_css": [
         ".slideshow__text .banner__buttons {width: 300px;}"
