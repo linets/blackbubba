@@ -274,7 +274,7 @@
                 {%- endif -%}
                 {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
-                {%- if card_product.media[1] != null and show_secondary_image -%}
+                {%- if show_secondary_image -%}
                   {% assign videos = card_product.media[1] | where: 'media_type', 'video' %}
                   {% if videos.size > 0 %}
                     <div
@@ -290,6 +290,7 @@
                   {% else %}
                     {% if variant.metafields.custom.media != blank %}
                       {% for media in variant.metafields.custom.media.value %}
+                        
                         <img
                           srcset="
                             {%- if media.width >= 165 -%}{{ media | image_url: width: 165 }} 165w,{%- endif -%}
