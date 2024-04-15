@@ -288,8 +288,10 @@
                       {{ card_product.media[1] | video_tag: controls: true, autoplay: true, loop: true }}
                     </div>
                   {% else %}
+                    xxxxxxxxxx
                     {% if variant.metafields.custom.media != blank %}
                       {% for media in variant.metafields.custom.media.value %}
+                        
                         <img
                           srcset="
                             {%- if media.width >= 165 -%}{{ media | image_url: width: 165 }} 165w,{%- endif -%}
