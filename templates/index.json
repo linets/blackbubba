@@ -81,15 +81,15 @@
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_3a735d6f-3a61-42c8-b240-e9ef27ec60f1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_527819d8-96d8-4440-b78e-3c1a269d6b9c.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_bee97230-2b77-4f1f-b862-71a42d62d816.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_53aacb12-b430-4501-b073-d4f844ddbf49.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/manson",
+            "link": "shopify:\/\/collections\/ddm",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#000000",
             "btn_color_border": "#ffffff",
@@ -105,6 +105,7 @@
         },
         "slide_wB9RPK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/BannerSALE2.jpg",
             "image_mobile": "shopify:\/\/shop_images\/BannerSALE1.jpg",
