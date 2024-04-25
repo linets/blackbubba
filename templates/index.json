@@ -157,9 +157,9 @@
         "template--16708066443427__8b8fdd54-6390-49d5-9974-bef4b0b24c26-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FOR_HIM.png",
-            "btn_label": "FOR HIM",
-            "btn_link": "shopify:\/\/collections\/hombre",
+            "image": "shopify:\/\/shop_images\/Banner_30.jpg",
+            "btn_label": "VER TODO",
+            "btn_link": "shopify:\/\/collections\/ddm-hasta-30000",
             "v_position": "center_v",
             "h_position": "center_h"
           }
