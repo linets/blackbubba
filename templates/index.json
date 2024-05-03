@@ -3,6 +3,31 @@
     "3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c": {
       "type": "slideshow",
       "blocks": {
+        "slide_kb6hxF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_6.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_5.jpg",
+            "desktop_video": "",
+            "mobile_video": "",
+            "tag": "",
+            "heading": "",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/fw24",
+            "btn_color_text": "#ffffff",
+            "btn_color_bg": "rgba(0,0,0,0)",
+            "btn_color_border": "#ffffff",
+            "button_style_secondary": true,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "box_max_width": 100,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
@@ -55,6 +80,7 @@
         },
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Slider_Zapatillas_1.jpg",
             "image_mobile": "shopify:\/\/shop_images\/Slider_ZapatillasM.jpg",
@@ -72,31 +98,6 @@
             "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "box_max_width": 100,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_kb6hxF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_6.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_5.jpg",
-            "desktop_video": "",
-            "mobile_video": "",
-            "tag": "",
-            "heading": "",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/fw24",
-            "btn_color_text": "#ffffff",
-            "btn_color_bg": "rgba(0,0,0,0)",
-            "btn_color_border": "#ffffff",
-            "button_style_secondary": true,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "box_max_width": 100,
             "color_scheme": "scheme-1",
@@ -131,10 +132,10 @@
         }
       },
       "block_order": [
+        "slide_kb6hxF",
         "slide_jhrcNK",
         "slide_GxC9fH",
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1",
-        "slide_kb6hxF",
         "slide_wB9RPK"
       ],
       "custom_css": [
@@ -346,15 +347,15 @@
         "template--16708066443427__bda69723-dbfb-4e98-a695-134c8c8f9141-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider-Active.png",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_1400x2120_080bc4e2-a752-4946-b493-47d9639beeff.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_Zapatillas_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_ZapatillasM.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/campana-active",
+            "link": "shopify:\/\/collections\/zapatillas",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#000000",
             "btn_color_border": "#000000",
