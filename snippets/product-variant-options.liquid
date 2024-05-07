@@ -185,8 +185,13 @@
         ele.nextElementSibling.classList.add('disabled');
       }
     }
+
+    checkAllColorDisabled();
   }
   function validateVariantSelection(e) {
+    setTimeout(() => {
+      checkDisabled(e);
+    }, 2000);
     setTimeout(() => {
       checkDisabled(e);
       //// Thumbnails Change
