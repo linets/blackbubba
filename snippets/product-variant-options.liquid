@@ -49,12 +49,11 @@
   {% if variant_type == 'color' %}
     {% for variant in product.variants %}
       {% if variant.title contains value %}
-        {% if variant.metafields.custom.color != blank %}
-          {% assign variant_color_id = variant.metafields.custom.color %}
-          {% continue %}
-        {% endif %}
+        {% assign variant_color_id = variant.metafields.custom.color %}
+        {% continue %}
       {% endif %}
     {% endfor %}
+
     <input
       onclick="validateVariantSelection(this)"
       type="radio"
@@ -78,7 +77,7 @@
       {% if variant_color_id != blank %}
         style="background-color:{{ variant_color_id }};"
       {% endif %}
-      class="{% if variant_color_id != blank %}color-type{% endif %}  {% if option.selected_value == value %} active {% endif %}"
+      class="{{ value | downcase }} {% if variant_color_id != blank %}color-type{% endif %}"
       data-variantId="{{ product.variants[counter].id }}"
       data-color="{{ value }}"
       for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -103,7 +102,7 @@
         class="disabled"
       {% endif %}
     >
-    <label class="talla" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
@@ -125,50 +124,22 @@
 
 <script>
   window.addEventListener('load', (event) => {
+    checkAllColorDisabled();
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let variant_id = urlParams.get('variant');
-    let thumbnailItems = document.querySelectorAll('.thumbnail-list__item');
-    thumbnailItems.forEach((item) => {
-      if (item.dataset.variantid == '') {
-        item.style.display = 'block';
-      }
-    });
-    // if (variant_id) {
-    //   let inputs = document.querySelectorAll('.product-form__input label');
-    //   [].forEach.call(inputs, function (input) {
-    //     input.classList.remove('active');
-    //     if (variant_id == input.dataset.variantid) {
-    //       input.classList.add('active');
-    //     }
-    //   });
-    // }
-    validateScrollArowDown();
-    let labels = document.querySelectorAll('.product-form__input label');
 
     if (variant_id) {
-      labels.forEach((label) => {
-        if (!label.classList.contains('talla')) {
-          if (!label.classList.contains('color-type')) {
-            label.click();
-          }
+      let inputs = document.querySelectorAll('.product-form__input label');
+      [].forEach.call(inputs, function (input) {
+        input.classList.remove('active');
+        if (variant_id == input.dataset.variantid) {
+          input.classList.add('active');
         }
       });
-    } else {
-      let checkedRadioButton = document.querySelector('input[name="Tamaño"]:checked');
-      let radioButtons = document.querySelectorAll('input[name="Tamaño"]');
-      radioButtons.forEach((radioButton) => {
-        if (!radioButton.checked) {
-          radioButton.click();
-        }
-      });
-
-      if (checkedRadioButton) {
-        checkedRadioButton.click();
-      }
     }
+    validateScrollArowDown();
   });
-
   function validateScrollArowDown() {
     setTimeout(() => {
       let sliderThumbanil = document.querySelectorAll('.thumbnail-list.slider li');
@@ -189,17 +160,40 @@
       }
     }, '200');
   }
-  function validateVariantSelection(e) {
-    if (e.name === 'Tamaño') {
-      let activeColorLabel = document.querySelector('.product-form__input label.color-type.active');
-      if (activeColorLabel) {
-        setTimeout(() => {
-          activeColorLabel.classList.add('active');
-        }, 500);
+
+  function checkAllColorDisabled() {
+    document.querySelectorAll('.product-form__input input[name="Color"]').forEach((e) => {
+      if (e.classList.contains('disabled')) {
+        e.nextElementSibling.classList.add('disabled');
+      }
+    });
+  }
+  function checkDisabled(e) {
+    if (document.querySelector('.product-form__input input[name="Tamaño"]')) {
+      document.querySelectorAll('.product-form__input input[name="Color"]').forEach((x) => {
+        x.nextElementSibling.classList.remove('disabled');
+      });
+      let ele = document.querySelector('.product-form__input input[name="Tamaño"]:checked');
+      if (ele.classList.contains('disabled')) {
+        document
+          .querySelector('.product-form__input input[name="Color"]:checked')
+          .nextElementSibling.classList.add('disabled');
+      }
+    } else {
+      let ele = document.querySelector('.product-form__input input[name="Color"]:checked');
+      if (ele.classList.contains('disabled')) {
+        ele.nextElementSibling.classList.add('disabled');
       }
     }
 
+    checkAllColorDisabled();
+  }
+  function validateVariantSelection(e) {
     setTimeout(() => {
+      checkDisabled(e);
+    }, 2000);
+    setTimeout(() => {
+      checkDisabled(e);
       //// Thumbnails Change
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -257,25 +251,5 @@
         e.disabled = false;
       }, '500');
     });
-    setTimeout(() => {
-      const slides = document.querySelectorAll('li.x-product-media, li.x-feature-media, li.x-metafields');
-      let found = false;
-      slides.forEach((slide) => {
-        if (!found && slide.style.display == 'block') {
-          slide.querySelector('button').setAttribute('aria-current', 'true');
-          found = true;
-        }
-      });
-    }, 1000);
   }
-  const elements = document.querySelectorAll(
-    'li.x-product-media button, li.x-feature-media button, li.x-metafields button'
-  );
-  elements.forEach((element) => {
-    element.addEventListener('click', function () {
-      setTimeout(() => {
-        this.setAttribute('aria-current', 'true');
-      }, 500);
-    });
-  });
 </script>
