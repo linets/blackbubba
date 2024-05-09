@@ -63,6 +63,15 @@
   }
 {%- endstyle -%}
 
+{% if search.results_count > 0 %}
+  {% assign hideItem = true %}
+  {%- for item in search.results -%}
+    {% if item.object_type != 'page' %}
+      {% assign hideItem = false %}
+    {% endif %}
+  {%- endfor -%}
+{% endif %}
+
 {% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -145,7 +154,7 @@
         {%- endif -%}
       {%- endif -%}
     </div>
-    {%- if search.performed -%}
+    {%- if search.performed and hideItem == false -%}
       {%- if section.settings.enable_sorting
         and section.settings.filter_type == 'vertical'
         and search.filters != empty
@@ -293,28 +302,30 @@
                           media_aspect_ratio: 1,
                           lazy_load: lazy_load
                         %}
-                      {%- when 'page' -%}
-                        <div class="article-card-wrapper card-wrapper underline-links-hover">
-                          <div
-                            class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}"
-                            style="--ratio-percent: 100%;"
-                          >
-                            <div class="card__content">
-                              <div class="card__information">
-                                <h3 class="card__heading">
-                                  <a href="{{ item.url }}" class="full-unstyled-link">
-                                    {{ item.title | truncate: 50 | escape }}
-                                  </a>
-                                </h3>
-                              </div>
-                              <div class="card__badge {{ settings.badge_position }}">
-                                <span class="badge color-{{ settings.color_schemes | first }}">
-                                  {{- 'templates.search.page' | t -}}
-                                </span>
+                        {% comment %}
+                          {%- when 'page' -%}
+                            <div class="article-card-wrapper card-wrapper underline-links-hover">
+                              <div
+                                class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}"
+                                style="--ratio-percent: 100%;"
+                              >
+                                <div class="card__content">
+                                  <div class="card__information">
+                                    <h3 class="card__heading">
+                                      <a href="{{ item.url }}" class="full-unstyled-link">
+                                        {{ item.title | truncate: 50 | escape }}
+                                      </a>
+                                    </h3>
+                                  </div>
+                                  <div class="card__badge {{ settings.badge_position }}">
+                                    <span class="badge color-{{ settings.color_schemes | first }}">
+                                      {{- 'templates.search.page' | t -}}
+                                    </span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+                        {% endcomment %}
                     {%- endcase -%}
                   </li>
                 {%- endfor -%}
@@ -327,6 +338,12 @@
         </div>
       </div>
     {%- endif -%}
+
+    {% if hideItem %}
+      <div class="template-search__header page-width scroll-trigger animate--fade-in">
+        <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+      </div>
+    {% endif %}
   </div>
 {% endpaginate %}
 {% if section.settings.image_shape == 'arch' %}
