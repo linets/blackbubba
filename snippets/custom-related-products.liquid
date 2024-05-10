@@ -33,8 +33,8 @@
   {% endcomment %}
 
   <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper related-container">
+  <div class="swiper custom-swiper">
+    <div class="swiper-wrapper related-container" style="width: 400px">
       {%- for relateds in prod.metafields.custom.productos_relacionados.value -%}
         {%- assign total_products = forloop.index -%}
         <div class="swiper-slide related-items">
@@ -67,28 +67,30 @@
   </div>
 {% endif %}
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
 <!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 2,
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+  const swiper = new Swiper('.custom-swiper', {
+    allowSlideNext: true,
+    allowSlidePrev: true,
+    allowTouchMove: true,
+    breakpointsBase: 'container',
+    slidesPerView: 3,
+    loop: true,
     spaceBetween: 10,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 0,
+    {% comment %} breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-    },
+    }, {% endcomment %}
   });
 </script>
 

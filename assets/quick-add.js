@@ -52,18 +52,22 @@ if (!customElements.get('quick-add-modal')) {
           });
       }
 
-      setInnerHTML(element, html) {
-        element.innerHTML = html;
+      setInnerHTML(elementItem, html) {
+        try {
+          elementItem.innerHTML = html;
 
-        // Reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
-        element.querySelectorAll('script').forEach((oldScriptTag) => {
-          const newScriptTag = document.createElement('script');
-          Array.from(oldScriptTag.attributes).forEach((attribute) => {
-            newScriptTag.setAttribute(attribute.name, attribute.value);
+          // Reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
+          elementItem.querySelectorAll('script').forEach((oldScriptTag) => {
+            const newScriptTag = document.createElement('script');
+            Array.from(oldScriptTag.attributes).forEach((attribute) => {
+              newScriptTag.setAttribute(attribute.name, attribute.value);
+            });
+            newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
+            oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
           });
-          newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
-          oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
-        });
+        } catch (error) {
+
+        }
       }
 
       preventVariantURLSwitching() {
