@@ -169,9 +169,9 @@
         "template--16708066443427__8b8fdd54-6390-49d5-9974-bef4b0b24c26-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_60.jpg",
-            "btn_label": "VER TODO",
-            "btn_link": "shopify:\/\/collections\/ddm-hasta-60000",
+            "image": "shopify:\/\/shop_images\/FOR_HER.png",
+            "btn_label": "FOR HER",
+            "btn_link": "shopify:\/\/collections\/ropa-mujer",
             "v_position": "center_v",
             "h_position": "center_h"
           }
