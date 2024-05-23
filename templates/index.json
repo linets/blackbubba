@@ -56,15 +56,15 @@
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_copia_8.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_6.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_4.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/travel",
+            "link": "shopify:\/\/collections\/mochilas-de-deporte",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#000000",
             "btn_color_border": "#ffffff",
