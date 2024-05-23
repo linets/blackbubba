@@ -1,0 +1,75 @@
+.locations-section h2{
+    color: #C5C5C5;
+    font-size: 3.5rem;
+    text-align: center;
+    width: 100%;  
+  }
+  .locations-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #C5C5C5;
+  }
+  .locations-container .location{
+    text-align: center;
+  }
+  .locations-container .location svg{
+    width: 50px;
+    height: 50px;
+  }
+  .locations-container .location .location_btn svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+  }
+  .locations-container .location .location_title{
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+  }
+  .locations-container .location .location_title::after{ 
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .locations-container .location .location_schedule p,
+  .locations-container .location .location_address p{
+    margin: 0;
+    color: #000;
+  }
+  .locations-container .location .location_schedule,
+  .locations-container .location .location_address{
+    margin-bottom: 10px;
+  }
+  .locations-container .location .location_btn{
+    border-radius: 15px;
+    border: 1px solid #000;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+    gap: 10px;
+    background: #000;
+  }
+  .locations-container .location .location_btn:hover{
+    opacity: 0.7;
+  }
+  
+  @media screen and (max-width: 750px){
+    .locations-container{
+      flex-direction: column;
+      padding-bottom: 0px;
+      border-bottom: initial;
+    }
+  }
