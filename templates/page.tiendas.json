@@ -81,9 +81,9 @@
         "location_aCpjhN": {
           "type": "location",
           "settings": {
-            "location": "ARICA",
-            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "location": "BLACK  PORTAL LA DEHESA",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 10:00 a 20:30<\/p>",
+            "address": "<p><strong>Av La Dehesa 1445, local 1089<\/strong><\/p>",
             "btn_label": "VER MAPA",
             "btn_url": "shopify:\/\/collections\/billeteras"
           }
