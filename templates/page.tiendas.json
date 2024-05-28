@@ -1,128 +1,128 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "disabled": true,
-        "custom_css": [
-  
-        ],
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
-      },
-      "locations_TCUdUK": {
-        "type": "locations",
-        "blocks": {
-          "location_7MzgVB": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_4w6ypp": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_3AXQ8H": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_eDxRLN": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          }
-        },
-        "block_order": [
-          "location_7MzgVB",
-          "location_4w6ypp",
-          "location_3AXQ8H",
-          "location_eDxRLN"
-        ],
-        "settings": {
-          "title": "Encuentra nuestras tiendas"
-        }
-      },
-      "locations_U78KU7": {
-        "type": "locations",
-        "blocks": {
-          "location_WNzUt9": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_aCpjhN": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_ykei7h": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          },
-          "location_3nJr9x": {
-            "type": "location",
-            "settings": {
-              "location": "ARICA",
-              "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-              "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-              "btn_label": "VER MAPA",
-              "btn_url": "shopify:\/\/collections\/billeteras"
-            }
-          }
-        },
-        "block_order": [
-          "location_WNzUt9",
-          "location_aCpjhN",
-          "location_ykei7h",
-          "location_3nJr9x"
-        ],
-        "settings": {
-          "title": ""
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main",
-      "locations_TCUdUK",
-      "locations_U78KU7"
-    ]
-  }
+    "locations_TCUdUK": {
+      "type": "locations",
+      "blocks": {
+        "location_7MzgVB": {
+          "type": "location",
+          "settings": {
+            "location": "BLACK  MARINA ARAUCO",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:30<\/p><p>Domingo: 10:00 a 20:00<\/p>",
+            "address": "<p><strong>Av Libertad Mall Marina Arauco 1348, local 102<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_4w6ypp": {
+          "type": "location",
+          "settings": {
+            "location": "BLACK  PARQUE ARAUCO",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 11:00 a 20:30<\/p>",
+            "address": "<p><strong>Av Kennedy 5413, local 137 A<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_3AXQ8H": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_eDxRLN": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        }
+      },
+      "block_order": [
+        "location_7MzgVB",
+        "location_4w6ypp",
+        "location_3AXQ8H",
+        "location_eDxRLN"
+      ],
+      "settings": {
+        "title": "Encuentra nuestras tiendas"
+      }
+    },
+    "locations_U78KU7": {
+      "type": "locations",
+      "blocks": {
+        "location_WNzUt9": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_aCpjhN": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_ykei7h": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        },
+        "location_3nJr9x": {
+          "type": "location",
+          "settings": {
+            "location": "ARICA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
+            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "shopify:\/\/collections\/billeteras"
+          }
+        }
+      },
+      "block_order": [
+        "location_WNzUt9",
+        "location_aCpjhN",
+        "location_ykei7h",
+        "location_3nJr9x"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "locations_TCUdUK",
+    "locations_U78KU7"
+  ]
+}
