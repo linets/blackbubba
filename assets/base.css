@@ -2918,7 +2918,9 @@ details[open]>.header__submenu {
   color: rgb(var(--color-foreground));
 }
 
-.header__menu-item a { text-decoration: none; }
+.header__menu-item a {
+  text-decoration: none;
+}
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
@@ -3642,4 +3644,18 @@ details-disclosure>details {
     --border-offset: 0px;
     /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+
+.card__media {
+  position: relative;
+}
+
+.card__media .product--metafield--tag {
+  position: absolute;
+  width: 50px !important;
+  height: 50px !important;
+  right: 10px !important;
+  top: 10px !important;
+  z-index: 10 !important;
+  left: initial !important;
 }

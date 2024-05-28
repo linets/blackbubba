@@ -228,6 +228,9 @@
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+              {%- if card_product.metafields.custom.tag_imagen != black -%}
+                <img class="product--metafield--tag" src="{{ card_product.metafields.custom.tag_imagen | image_url }}">
+              {%- endif -%}
               <a href="{% if variant.url != blank %}{{ variant.url }}{% else %}{{ card_product.url }}{% endif %}">
                 {%- if variant.featured_media -%}
                   <img
@@ -290,7 +293,6 @@
                   {% else %}
                     {% if variant.metafields.custom.media != blank %}
                       {% for media in variant.metafields.custom.media.value %}
-                        
                         <img
                           srcset="
                             {%- if media.width >= 165 -%}{{ media | image_url: width: 165 }} 165w,{%- endif -%}

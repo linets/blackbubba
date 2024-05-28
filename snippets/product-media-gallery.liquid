@@ -138,6 +138,9 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
+  {%- if product.metafields.custom.tag_imagen != black -%}
+    <img class="product--metafield--tag" src="{{ product.metafields.custom.tag_imagen | image_url }}">
+  {%- endif -%}
   <slider-component id="GalleryViewer-{{ section.id }}{{ id_append }}" class="slider-mobile-gutter">
     {%- unless is_duplicate -%}
       <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
