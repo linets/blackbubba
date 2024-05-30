@@ -73,6 +73,16 @@
             "btn_label": "VER MAPA",
             "btn_url": "https:\/\/maps.app.goo.gl\/xRaoAWKnsM81g1yx6"
           }
+        },
+        "location_imQtkj": {
+          "type": "location",
+          "settings": {
+            "location": "BLACK  MUT",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:00<\/p><p>Domingos: 10:00 a 20:00<\/p>",
+            "address": "<p><strong>Av Apoquindo 2730, local 116<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https:\/\/maps.app.goo.gl\/4kHjsfhcYgNq2u7A7"
+          }
         }
       },
       "block_order": [
@@ -81,7 +91,8 @@
         "location_3AXQ8H",
         "location_eDxRLN",
         "location_4i8JFT",
-        "location_XzrL4i"
+        "location_XzrL4i",
+        "location_imQtkj"
       ],
       "settings": {
         "title": "Nuestras Tiendas"
