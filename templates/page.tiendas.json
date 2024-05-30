@@ -53,13 +53,35 @@
             "btn_label": "VER MAPA",
             "btn_url": "https:\/\/maps.app.goo.gl\/8XAymVAKc5wvjvco6"
           }
+        },
+        "location_4i8JFT": {
+          "type": "location",
+          "settings": {
+            "location": "BLACK  TREBOL",
+            "schedule": "",
+            "address": "",
+            "btn_label": "",
+            "btn_url": ""
+          }
+        },
+        "location_XzrL4i": {
+          "type": "location",
+          "settings": {
+            "location": "",
+            "schedule": "",
+            "address": "",
+            "btn_label": "",
+            "btn_url": ""
+          }
         }
       },
       "block_order": [
         "location_7MzgVB",
         "location_4w6ypp",
         "location_3AXQ8H",
-        "location_eDxRLN"
+        "location_eDxRLN",
+        "location_4i8JFT",
+        "location_XzrL4i"
       ],
       "settings": {
         "title": "Nuestras Tiendas"
