@@ -67,11 +67,11 @@
         "location_XzrL4i": {
           "type": "location",
           "settings": {
-            "location": "",
-            "schedule": "",
-            "address": "",
-            "btn_label": "",
-            "btn_url": ""
+            "location": "BLACK  PORTAL LA DEHESA",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 10:00 a 20:30<\/p>",
+            "address": "<p><strong>Av La Dehesa 1445, local 1089<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https:\/\/maps.app.goo.gl\/xRaoAWKnsM81g1yx6"
           }
         }
       },
