@@ -53,22 +53,8 @@
             "btn_label": "VER MAPA",
             "btn_url": "https:\/\/maps.app.goo.gl\/8XAymVAKc5wvjvco6"
           }
-        }
-      },
-      "block_order": [
-        "location_7MzgVB",
-        "location_4w6ypp",
-        "location_3AXQ8H",
-        "location_eDxRLN"
-      ],
-      "settings": {
-        "title": "Nuestras Tiendas"
-      }
-    },
-    "locations_U78KU7": {
-      "type": "locations",
-      "blocks": {
-        "location_WNzUt9": {
+        },
+        "location_4i8JFT": {
           "type": "location",
           "settings": {
             "location": "BLACK  TREBOL",
@@ -78,7 +64,7 @@
             "btn_url": "https:\/\/maps.app.goo.gl\/hs1r3hQD9qPHV2RSA"
           }
         },
-        "location_aCpjhN": {
+        "location_XzrL4i": {
           "type": "location",
           "settings": {
             "location": "BLACK  PORTAL LA DEHESA",
@@ -88,7 +74,7 @@
             "btn_url": "https:\/\/maps.app.goo.gl\/xRaoAWKnsM81g1yx6"
           }
         },
-        "location_ykei7h": {
+        "location_imQtkj": {
           "type": "location",
           "settings": {
             "location": "BLACK  MUT",
@@ -97,33 +83,24 @@
             "btn_label": "VER MAPA",
             "btn_url": "https:\/\/maps.app.goo.gl\/4kHjsfhcYgNq2u7A7"
           }
-        },
-        "location_3nJr9x": {
-          "type": "location",
-          "disabled": true,
-          "settings": {
-            "location": "ARICA",
-            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sabados: 09:00 a 7:00PM<\/p>",
-            "address": "<p>Av. La Dehesa N 181, Local 3, <br\/>La Dehesa<\/p>",
-            "btn_label": "VER MAPA",
-            "btn_url": "shopify:\/\/collections\/billeteras"
-          }
         }
       },
       "block_order": [
-        "location_WNzUt9",
-        "location_aCpjhN",
-        "location_ykei7h",
-        "location_3nJr9x"
+        "location_7MzgVB",
+        "location_4w6ypp",
+        "location_3AXQ8H",
+        "location_eDxRLN",
+        "location_4i8JFT",
+        "location_XzrL4i",
+        "location_imQtkj"
       ],
       "settings": {
-        "title": ""
+        "title": "Nuestras Tiendas"
       }
     }
   },
   "order": [
     "main",
-    "locations_TCUdUK",
-    "locations_U78KU7"
+    "locations_TCUdUK"
   ]
 }
