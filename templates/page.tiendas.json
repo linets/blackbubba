@@ -58,10 +58,10 @@
           "type": "location",
           "settings": {
             "location": "BLACK  TREBOL",
-            "schedule": "",
-            "address": "",
-            "btn_label": "",
-            "btn_url": ""
+            "schedule": "<p>Lunes a Jueves: 10:30 a 20:30<\/p><p>Viernes y Sabados: 10:30 a 21:00<\/p><p>Domingos: 10:00 a 20:00<\/p>",
+            "address": "<p><strong>Av Jorge Alessandri 31776, local E-103, E-104<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https:\/\/maps.app.goo.gl\/hs1r3hQD9qPHV2RSA"
           }
         },
         "location_XzrL4i": {
