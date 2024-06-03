@@ -46,7 +46,7 @@
                           {% endif %}
                           {% assign colorVariant = "" | append: variant.metafields.custom.color %}
                           <li
-                              data-discount="{% if variant.compare_at_price != blank %}{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round: 0 }}{% endif %}"
+                              data-discount="{% if variant.compare_at_price != 0 %}{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round: 0 }}{% endif %}"
                               data-featured-img="{{ variant.featured_media }}"
                               data-second-img="{% for media in variant.metafields.custom.media.value %}{{ media }}{% break %}{% endfor %}"
                               style="background: {{ variant.metafields.custom.color }};"
