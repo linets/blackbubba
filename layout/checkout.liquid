@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
+    >
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    {{ 'nomad-if.js' | asset_url | script_tag }}
+
+    <style>
+      .field-province {
+        width: 50% !important;
+      }
+    </style>
+
+    <!-- Clarity Script -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'i92eim23jk');
+    </script>
+    <!-- End Clarity Script -->
+  </head>
+
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            <!-- plugin -->
+
+            <div class="section section--delivery-options" style="margin-bottom: 20px" id="shipping-choice-container">
+              <div class="section__header">
+                <h2 class="section__title">¿Prefieres despachar o retirar tu compra?</h2>
+              </div>
+              <fieldset id="delivery_options" class="content-box">
+                <legend class="visually-hidden">Selecciona dónde prefieres despachar o retirar tu compra</legend>
+
+                <div class="content-box__row">
+                  <div class="radio-wrapper">
+                    <div class="radio__input">
+                      <input
+                        class="input-radio"
+                        type="radio"
+                        value="home"
+                        name="delivery_option[option.id]"
+                        id="delivery_option_home"
+                        checked="checked"
+                      >
+                    </div>
+                    <label class="radio__label" aria-hidden="true" for="delivery_option_home">
+                      <span
+                        class="radio__label__primary"
+                        data-shipping-method-label-title="Despacho a domicilio (casa, depto, oficina, etc.)"
+                      >
+                        Despacho a domicilio (casa, depto, oficina, etc.)
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <!-- RETIRO EN TIENDA -->
+
+                {% comment %}
+                  <div class="content-box__row">
+                    <div class="radio-wrapper">
+                      <div class="radio__input">
+                        <input class="input-radio" type="radio" value="storepickup" name="delivery_option[option.id]"
+                          id="delivery_option_storepickup">
+                      </div>
+                      <label class="radio__label" aria-hidden="true" for="delivery_option_storepickup">
+                        <span class="radio__label__primary" data-shipping-method-label-title="Retiro en tiendas">
+                          Retiro gratuito en Tiendas
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                {% endcomment %}
+
+                <!--
+                  <div class="content-box__row" style="display:none;">
+                    <div class="radio-wrapper">
+                      <div class="radio__input">
+                        <input class="input-radio" type="radio" value="third_party_location"
+                          name="delivery_option[option.id]" id="delivery_option_chilexpress">
+                      </div>
+                      <label class="radio__label" aria-hidden="true" for="delivery_option_chilexpress">
+                        <span class="radio__label__primary"
+                          data-shipping-method-label-title="Retiro en sucursal Chilexpress">
+                          Retiro en sucursal Chilexpress
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                -->
+              </fieldset>
+            </div>
+
+            <!-- /Plugin -->
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {% comment %}
+      <div id="pickup-stores-template">
+        <div>
+          <div class="field field--required field--show-floating-label" data-address-field="storepickup_checkout">
+            <div class="field__input-wrapper field__input-wrapper--select">
+              <label class="field__label field__label--visible" for="checkout_third_party_locations_storepickup">
+                Lugares de retiro
+              </label>
+              <select class="field__input field__input--select" name="checkout[self_locations_storepickup]"
+                id="checkout_third_party_locations_storepickup" value="">
+                <option value="PUENTE NUEVO: Av La Dehesa 181, Local 3">TIENDA LA DEHESA</option>
+                <option value="Av. Kennedy 5413, Local 154/155, piso 1">TIENDA PARQUE ARAUCO</option>
+                <option value="Av. Kennedy N° 9001, Local 3133, 3° nivel">TIENDA ALTO LAS CONDES</option>
+                <option value="Mall Portal La Dehesa, Local Nº: 2086, Nivel 2.">TIENDA PORTAL LA DEHESA</option>
+                <option value="Av. Vicuña Mackenna Oriente N° 7110, Local N° 103, La Florida.">TIENDA VESPUCIO</option>
+                <option value="14 Norte 821, Viña del Mar, Región de Valparaíso – local 102 - 2° Nivel.">TIENDA VIÑA DEL MAR</option>
+                <option value="Nueva costanera 3900, Nivel Planta Baja,Vitacura.">TIENDA CASA COSTANERA</option>
+                <option value="Av. Andrés Bello 2425, local 2168, Providencia.">TIENDA COSTANERA CENTER</option>
+                <option value="Av. Carlos Valdovinos 200, Local A5, San Joaquín.">TIENDA LA FABRICA</option>
+                <option value="Av Presidente Eduardo Freí Montalva 9709, local 414, Quilicura.">TIENDA QUILICURA</option>
+                <option value="Vicuña Mackenna 6100 local 2057, La Florida.">BUBBA FLORIDA CENTER</option>
+                <option value="Av. José Pedro Alessandri 1166 local 3025, Ñuñoa.">BUBBA PORTAL ÑUÑOA</option>
+                <option value="Padre Hurtado Sur 875 Local C-1093A Nivel 1, Las Condes">TIENDA MALL PLAZA LOS DOMINICOS</option>
+                <option value="Av. Americo Vespucio 1501 Local B105 Nivel 1, Cerrillos">TIENDA MALL PLAZA OESTE</option>
+
+              </select>
+            </div>
+            <label id="address__label" class="checkbox__label" style="padding-left: 10px; padding-top: 5px;">Av La Dehesa 181, Local 3. La Dehesa.</label>
+          </div>
+        </div>
+      </div>
+    {% endcomment %}
+    <script type="text/javascript">
+      /**
+       * TODO: change this ids
+       */
+
+      document.querySelectorAll('.field').forEach((item) => {
+        if (item.getAttribute('data-address-field') === 'province') {
+          $(item).addClass('field-province');
+        }
+      });
+
+      var inventory = {
+        // radio buttons
+        radio_home: function () {
+          return document.getElementById('delivery_option_home');
+        },
+        radio_pickup: function () {
+          return document.getElementById('delivery_option_storepickup');
+        },
+        radio_chilexpress: function () {
+          return document.getElementById('delivery_option_chilexpress');
+        },
+
+        // inputs
+        input_address_1: function () {
+          return document.getElementById('checkout_shipping_address_address1');
+        },
+        input_address_2: function () {
+          return document.getElementById('checkout_shipping_address_address2');
+        },
+        input_address_city: function () {
+          return document.getElementById('checkout_shipping_address_city');
+        },
+        input_address_country: function () {
+          return document.getElementById('checkout_shipping_address_country');
+        },
+        input_address_province: function () {
+          return document.getElementById('checkout_shipping_address_province');
+        },
+        input_store_pickup: function () {
+          return document.getElementById('checkout_third_party_locations_storepickup');
+        },
+
+        address_label: function () {
+          return document.getElementById('address__label');
+        },
+
+        div_address_fields: function () {
+          return document.getElementsByClassName('address-fields')[0];
+        },
+
+        template_pickup_stores: function () {
+          return document.getElementById('pickup-stores-template');
+        },
+
+        shipping_choice_container: function () {
+          return document.getElementById('shipping-choice-container');
+        },
+      };
+
+      function hideElement(element) {
+        element.parentElement.parentElement.style.display = 'none';
+      }
+
+      function showElement(element) {
+        element.parentElement.parentElement.style.display = 'block';
+      }
+
+      function setPickup(element) {
+        storePickupChange({
+          target: inventory.input_store_pickup(),
+        });
+
+        hideElement(inventory.input_address_1());
+        hideElement(inventory.input_address_2());
+        hideElement(inventory.input_address_city());
+        hideElement(inventory.input_address_country());
+        hideElement(inventory.input_address_province());
+
+        showElement(inventory.input_store_pickup());
+      }
+
+      function setupThirdParty() {
+        hideElement(inventory.input_address_1());
+        hideElement(inventory.input_address_2());
+        hideElement(inventory.input_address_city());
+        hideElement(inventory.input_address_country());
+        hideElement(inventory.input_address_province());
+
+        showElement(inventory.input_store_pickup());
+      }
+
+      function setupHome() {
+        resetAddress();
+
+        hideElement(inventory.input_store_pickup());
+
+        showElement(inventory.input_address_1());
+        showElement(inventory.input_address_2());
+        showElement(inventory.input_address_city());
+        showElement(inventory.input_address_country());
+        showElement(inventory.input_address_province());
+      }
+
+      function changeEvent(event) {
+        if (event.target.value === 'home') {
+          setupHome();
+        }
+        if (event.target.value === 'third_party_location') {
+          setupThirdParty();
+        }
+        if (event.target.value === 'storepickup') {
+          setPickup();
+        }
+      }
+
+      function resetAddress() {
+        inventory.input_address_1().value = '';
+        inventory.input_address_city().value = '';
+        inventory.input_address_province().value = 'RM';
+      }
+
+      function getProvince(store_name) {
+        if (store_name === 'TIENDA LA DEHESA') return 'Lo Barnechea';
+        if (store_name === 'TIENDA PARQUE ARAUCO') return 'Las Condes';
+        if (store_name === 'TIENDA ALTO LAS CONDES') return 'Las Condes';
+        if (store_name === 'TIENDA PORTAL LA DEHESA') return 'La Dehesa';
+        if (store_name === 'TIENDA MALL PLAZA VESPUCIO') return 'La Florida';
+        if (store_name === 'TIENDA VIÑA DEL MAR') return 'Viña del Mar';
+        if (store_name === 'TIENDA CASA COSTANERA') return 'Vitacura';
+        if (store_name === 'TIENDA COSTANERA CENTER') return 'Providencia';
+        if (store_name === 'TIENDA LA FABRICA') return 'San Joaquín';
+        if (store_name === 'TIENDA QUILICURA') return 'Quilicura';
+        if (store_name === 'TIENDA MALL PLAZA LOS DOMINICOS') return 'Las Condes';
+        if (store_name === 'TIENDA MALL PLAZA OESTE') return 'Cerrillos';
+        if (store_name === 'TIENDA FLORIDA CENTER') return 'La Florida';
+        if (store_name === 'TIENDA PORTAL ÑUÑOA') return 'Ñuñoa';
+
+        return '';
+      }
+
+      function storePickupChange(event) {
+        const province = getProvince(event.target.options[event.target.selectedIndex].text);
+        inventory.input_address_1().value = event.target.value;
+        inventory.input_address_city().value =
+          province + ' (' + event.target.options[event.target.selectedIndex].text + ') ';
+        inventory.input_address_province().value = 'RM';
+        inventory.address_label().innerHTML = event.target.value + '. ' + province + '.';
+      }
+
+      setTimeout(function () {
+        if (Shopify.Checkout.step !== 'contact_information')
+          inventory.shipping_choice_container().style.display = 'none';
+
+        inventory.radio_home().addEventListener('change', changeEvent);
+        inventory.radio_pickup().addEventListener('change', changeEvent);
+        inventory.radio_chilexpress().addEventListener('change', changeEvent);
+
+        if (inventory.radio_home().value === 'home') setupHome();
+
+        inventory.div_address_fields().append(inventory.template_pickup_stores());
+        inventory.input_store_pickup().addEventListener('change', storePickupChange);
+      }, 500);
+    </script>
+    <script type="text/javascript">
+      var region_code = {
+        'Arica y Parinacota': 'AP',
+        Tarapacá: 'TA',
+        Antofagasta: 'AN',
+        Atacama: 'AT',
+        Coquimbo: 'CO',
+        Valparaíso: 'VS',
+        'Región Metropolitana': 'RM',
+        "O'Higgins": 'LI',
+        Maule: 'ML',
+        Ñuble: 'NB',
+        Biobío: 'BI',
+        Araucanía: 'AR',
+        'Los Ríos': 'LR',
+        'Los Lagos': 'LL',
+        Aysén: 'AI',
+        Magallanes: 'MA',
+      };
+      var lookup = {
+        street_number: $('#checkout_shipping_address_address1'),
+        route: $('#checkout_shipping_address_address1'),
+        fullAddress: $('#checkout_shipping_address_address1'),
+        locality: $('#checkout_shipping_address_city'),
+        administrative_area_level_1: $('#checkout_shipping_address_province'),
+        country: $('#checkout_shipping_address_country'),
+        postal_code: $('#checkout_shipping_address_zip'),
+      };
+
+      var placeSearch;
+      var autocomplete;
+      var componentForm = {
+        street_number: 'short_name',
+        route: 'long_name',
+        locality: 'long_name',
+        administrative_area_level_1: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name',
+      };
+
+      function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+          /** @type {!HTMLInputElement} */ ($('#checkout_shipping_address_address1').on('focus', geolocate)[0]),
+          { types: ['geocode'], componentRestrictions: { country: 'CL' } }
+        );
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete.addListener('place_changed', fillInAddress);
+      }
+
+      function fillInAddress() {
+        const currentAddress = $('#checkout_shipping_address_address1').val();
+
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
+        for (var component in componentForm) {
+          lookup[component].val('');
+        }
+
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        var fullAddress = ' ';
+        for (var i = 0; i < place.address_components.length; i++) {
+          var addressType = place.address_components[i].types[0];
+          var val = place.address_components[i][componentForm[addressType]];
+          if (componentForm[addressType]) {
+            switch (addressType) {
+              case 'street_number':
+                fullAddress = fullAddress + val;
+                break;
+              case 'route':
+                fullAddress = val + fullAddress;
+                break;
+              case 'locality':
+                var the_val = val;
+                lookup.locality.val(val);
+                setTimeout(function () {
+                  $('#dropdown-comunas').val(the_val);
+                  handleProvinceChange();
+                }, 200);
+                break;
+              case 'administrative_area_level_1':
+                $('#checkout_shipping_address_province').val(region_code[val]);
+                handleRegionChange();
+                // lookup.administrative_area_level_1.val(region_code[val]);
+                break;
+              case 'country':
+                lookup.country.val(val);
+                break;
+              case 'postal_code':
+                lookup.postal_code.val(val);
+                break;
+            }
+          }
+        }
+        lookup.fullAddress.val(currentAddress);
+      }
+
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        // var geolocation = {
+        //   lat: -33.4594048,
+        //   lng: -70.6543616
+        // };
+        // var circle = new google.maps.Circle({
+        //   center: geolocation,
+        //   radius: position.coords.accuracy
+        // });
+        // autocomplete.setBounds(circle.getBounds());
+
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy,
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        } else {
+          var geolocation = {
+            lat: -33.4378439,
+            lng: -70.6526683,
+          };
+          var circle = new google.maps.Circle({
+            center: geolocation,
+            radius: position.coords.accuracy,
+          });
+          autocomplete.setBounds(circle.getBounds());
+        }
+      }
+      var zip,
+        zip_input,
+        country,
+        region,
+        comunas,
+        city,
+        select,
+        carret,
+        select_html,
+        province_container,
+        city_container;
+
+      function handleRegionChange() {
+        if (!comunas.hasOwnProperty(region.value)) return;
+
+        c = comunas[region.value];
+        select_html = ["<option value='' >Seleccione Comuna</option>"];
+        for (var i = 0; i < c.length; i++) {
+          select_html.push("<option value='" + c[i] + "'>" + c[i] + '</option>');
+        }
+
+        select.innerHTML = select_html.join('');
+        handleProvinceChange();
+      }
+
+      function handleProvinceChange() {
+        city.value = select.value;
+      }
+
+      // AN -> Antofagasta
+      // AR -> Araucanía
+      // AP -> Arica and Parinacota
+      // AT -> Atacama
+      // AI -> Aysén
+      // BI -> Biobío
+      // CO -> Coquimbo
+      // LL -> Los Lagos
+      // LR -> Los Ríos
+      // MA -> Magallanes
+      // ML -> Maule
+      // NB -> Ñuble
+      // LI -> O’Higgins
+      // RM -> Santiago
+      // TA -> Tarapacá
+      // VS -> Valparaíso
+      comunas = {
+        AN: [
+          'Antofagasta',
+          'Calama',
+          'María Elena',
+          'Mejillones',
+          'Ollagüe',
+          'San Pedro de Atacama',
+          'Sierra Gorda',
+          'Taltal',
+          'Tocopilla',
+        ],
+        AR: [
+          'Angol',
+          'Carahue',
+          'Cholchol',
+          'Collipulli',
+          'Cunco',
+          'Curacautín',
+          'Curarrehue',
+          'Ercilla',
+          'Freire',
+          'Galvarino',
+          'Gorbea',
+          'Lautaro',
+          'Loncoche',
+          'Lonquimay',
+          'Los Sauces',
+          'Lumaco',
+          'Melipeuco',
+          'Nueva Imperial',
+          'Padre las Casas',
+          'Perquenco',
+          'Pitrufquén',
+          'Pucón',
+          'Purén',
+          'Renaico',
+          'Saavedra',
+          'Temuco',
+          'Teodoro Schmidt',
+          'Toltén',
+          'Traiguén',
+          'Victoria',
+          'Vilcún',
+          'Villarrica',
+        ],
+        AP: ['Arica', 'Camarones', 'General Lagos', 'Putre'],
+        AT: [
+          'Alto del Carmen',
+          'Caldera',
+          'Chañaral',
+          'Copiapó',
+          'Diego de Almagro',
+          'Freirina',
+          'Huasco',
+          'Tierra Amarilla',
+          'Vallenar',
+        ],
+        AI: [
+          'Aisén',
+          'Chile Chico',
+          'Cisnes',
+          'Cochrane',
+          'Coyhaique',
+          'Guaitecas',
+          'Lago Verde',
+          'O’Higgins',
+          'Río Ibáñez',
+          'Tortel',
+        ],
+        BI: [
+          'Alto Biobío',
+          'Antuco',
+          'Arauco',
+          'Cabrero',
+          'Cañete',
+          'Chiguayante',
+          'Concepción',
+          'Contulmo',
+          'Coronel',
+          'Curanilahue',
+          'Florida',
+          'Hualpén',
+          'Hualqui',
+          'Laja',
+          'Lebu',
+          'Los Álamos',
+          'Los Ángeles',
+          'Lota',
+          'Mulchén',
+          'Nacimiento',
+          'Negrete',
+          'Penco',
+          'Quilaco',
+          'Quilleco',
+          'San Pedro de la Paz',
+          'San Rosendo',
+          'Santa Bárbara',
+          'Santa Juana',
+          'Talcahuano',
+          'Tirúa',
+          'Tomé',
+          'Tucapel',
+          'Yumbel',
+        ],
+        CO: [
+          'Andacollo',
+          'Canela',
+          'Combarbalá',
+          'Coquimbo',
+          'Illapel',
+          'La Higuera',
+          'La Serena',
+          'Los Vilos',
+          'Monte Patria',
+          'Ovalle',
+          'Paihuano',
+          'Punitaqui',
+          'Río Hurtado',
+          'Salamanca',
+          'Vicuña',
+        ],
+        LL: [
+          'Ancud',
+          'Calbuco',
+          'Castro',
+          'Chaitén',
+          'Chonchi',
+          'Cochamó',
+          'Curaco de Vélez',
+          'Dalcahue',
+          'Fresia',
+          'Frutillar',
+          'Futaleufú',
+          'Hualaihué',
+          'Llanquihue',
+          'Los Muermos',
+          'Maullín',
+          'Osorno',
+          'Palena',
+          'Puerto Montt',
+          'Puerto Octay',
+          'Puerto Varas',
+          'Puqueldón',
+          'Purranque',
+          'Puyehue',
+          'Queilén',
+          'Quellón',
+          'Quemchi',
+          'Quinchao',
+          'Río Negro',
+          'San Juan de la Costa',
+          'San Pablo',
+        ],
+        LR: [
+          'Corral',
+          'Futrono',
+          'La Unión',
+          'Lago Ranco',
+          'Lanco',
+          'Los Lagos',
+          'Mariquina',
+          'Máfil',
+          'Paillaco',
+          'Panguipulli',
+          'Río Bueno',
+          'Valdivia',
+        ],
+        MA: [
+          'Antártica',
+          'Cabo de Hornos (Ex Navarino)',
+          'Laguna Blanca',
+          'Natales',
+          'Porvenir',
+          'Primavera',
+          'Punta Arenas',
+          'Río Verde',
+          'San Gregorio',
+          'Timaukel',
+          'Torres del Paine',
+        ],
+        ML: [
+          'Cauquenes',
+          'Chanco',
+          'Colbún',
+          'Constitución',
+          'Curepto',
+          'Curicó',
+          'Empedrado',
+          'Hualañé',
+          'Licantén',
+          'Linares',
+          'Longaví',
+          'Maule',
+          'Molina',
+          'Parral',
+          'Pelarco',
+          'Pelluhue',
+          'Pencahue',
+          'Rauco',
+          'Retiro',
+          'Romeral',
+          'Río Claro',
+          'Sagrada Familia',
+          'San Clemente',
+          'San Javier',
+          'San Rafael',
+          'Talca',
+          'Teno',
+          'Vichuquén',
+          'Villa Alegre',
+          'Yerbas Buenas',
+        ],
+        NB: [
+          'Bulnes',
+          'Chillán',
+          'Chillán Viejo',
+          'Cobquecura',
+          'Coelemu',
+          'Coihueco',
+          'El Carmen',
+          'Ninhue',
+          'Pemuco',
+          'Pinto',
+          'Portezuelo',
+          'Quillón',
+          'Quirihue',
+          'Ránquil',
+          'San Carlos',
+          'San Fabián',
+          'San Ignacio',
+          'San Nicolás',
+          'Treguaco',
+          'Yungay',
+          'Ñiquén',
+        ],
+        LI: [
+          'Chimbarongo',
+          'Chépica',
+          'Codegua',
+          'Coinco',
+          'Coltauco',
+          'Doñihue',
+          'Graneros',
+          'La Estrella',
+          'Las Cabras',
+          'Litueche',
+          'Lolol',
+          'Machalí',
+          'Malloa',
+          'Marchihue',
+          'Mostazal',
+          'Nancagua',
+          'Navidad',
+          'Olivar',
+          'Palmilla',
+          'Paredones',
+          'Peralillo',
+          'Peumo',
+          'Pichidegua',
+          'Pichilemu',
+          'Placilla',
+          'Pumanque',
+          'Quinta de Tilcoco',
+          'Rancagua',
+          'Rengo',
+          'Requínoa',
+          'San Fernando',
+          'San Vicente',
+          'Santa Cruz',
+        ],
+        RM: [
+          'Alhué',
+          'Buin',
+          'Calera de Tango',
+          'Cerrillos',
+          'Cerro Navia',
+          'Colina',
+          'Conchalí',
+          'Curacaví',
+          'El Bosque',
+          'El Monte',
+          'Estación Central',
+          'Huechuraba',
+          'Independencia',
+          'Isla de Maipo',
+          'La Cisterna',
+          'La Florida',
+          'La Granja',
+          'La Pintana',
+          'La Reina',
+          'Lampa',
+          'Las Condes',
+          'Lo Barnechea',
+          'Lo Espejo',
+          'Lo Prado',
+          'Macul',
+          'Maipú',
+          'María Pinto',
+          'Melipilla',
+          'Padre Hurtado',
+          'Paine',
+          'Pedro Aguirre Cerda',
+          'Peñaflor',
+          'Peñalolén',
+          'Pirque',
+          'Providencia',
+          'Pudahuel',
+          'Puente Alto',
+          'Quilicura',
+          'Quinta Normal',
+          'Recoleta',
+          'Renca',
+          'San Bernardo',
+          'San Joaquín',
+          'San José de Maipo',
+          'San Miguel',
+          'San Pedro',
+          'San Ramón',
+          'Santiago',
+          'Talagante',
+          'Tiltil',
+          'Vitacura',
+          'Ñuñoa',
+        ],
+        TA: ['Alto Hospicio', 'Camiña', 'Colchane', 'Huara', 'Iquique', 'Pica', 'Pozo Almonte'],
+        VS: [
+          'Algarrobo',
+          'Cabildo',
+          'Calera',
+          'Calle Larga',
+          'Cartagena',
+          'Casablanca',
+          'Catemu',
+          'Concón',
+          'El Quisco',
+          'El Tabo',
+          'Hijuelas',
+          'Isla de Pascua',
+          'Juan Fernández',
+          'La Cruz',
+          'La Ligua',
+          'Limache',
+          'Llaillay',
+          'Los Andes',
+          'Nogales',
+          'Olmué',
+          'Panquehue',
+          'Papudo',
+          'Petorca',
+          'Puchuncaví',
+          'Putaendo',
+          'Quillota',
+          'Quilpué',
+          'Quintero',
+          'Rinconada',
+          'San Antonio',
+          'San Esteban',
+          'San Felipe',
+          'Santa María',
+          'Santo Domingo',
+          'Valparaíso',
+          'Villa Alemana',
+          'Viña del Mar',
+          'Zapallar',
+        ],
+      };
+
+      function docReady(fn) {
+        // see if DOM is already available
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          // call on next available tick
+          setTimeout(fn, 1);
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      docReady(function () {
+        zip_input = document.getElementById('checkout_shipping_address_zip');
+        zip = document.querySelectorAll('[data-address-field=zip]')[0];
+        country = document.querySelectorAll('[data-address-field=country]')[0];
+        city = document.getElementById('checkout_shipping_address_city');
+        region = document.getElementById('checkout_shipping_address_province');
+
+        if (zip_input !== null) zip_input.value = '';
+        if (zip !== undefined) zip.style = 'display:none';
+        if (country !== undefined) country.classList.remove('field--half');
+
+        // region y comuna
+        if (city !== null) {
+          select = document.createElement('select');
+          select.id = 'dropdown-comunas';
+          select.classList.add('field__input');
+          select.classList.add('field__input--select');
+          select.attributes['data-trekkie-id'] = 'shipping_city_field';
+          select.innerHTML = "<option disabled value='' >Seleccione Región</option>";
+
+          carret = document.createElement('div');
+          carret.classList.add('field__caret');
+          carret.classList.add('shown-if-js');
+          carret.innerHTML =
+            '<svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>';
+
+          city.parentNode.insertBefore(carret, city);
+          city.parentNode.insertBefore(select, city);
+
+          select.addEventListener('change', handleProvinceChange);
+
+          city.value = '';
+          city.style = 'display:none';
+
+          handleRegionChange();
+          handleProvinceChange();
+          region.addEventListener('change', handleRegionChange);
+
+          province_container = document.querySelectorAll('[data-address-field=province]')[0];
+          city_container = document.querySelectorAll('[data-address-field=city]')[0];
+          city_container.parentElement.insertBefore(province_container, city_container);
+          country.style = 'display:none';
+        }
+      });
+    </script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx0ue3-JcntjdmMTxGRr7whPKmGCXhGOg&libraries=places&callback=initAutocomplete"
+    ></script>
+
+    {{ tracking_code }}
+  </body>
+</html>
