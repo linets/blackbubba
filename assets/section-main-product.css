@@ -296,7 +296,7 @@ variant-selects {
 }
 
 .product-form__input label[data-color].disabled {
-  pointer-events: none !important;
+  /*pointer-events: none !important;*/
 }
 
 .product-form__input label[data-color].disabled::after {
