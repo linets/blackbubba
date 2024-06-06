@@ -75,7 +75,7 @@
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     {%- if variant -%}
-      {% if variant.compare_at_price != blank %}
+      {% if variant.compare_at_price > 0 %}
         {% assign discount_percent = variant.compare_at_price
           | minus: variant.price
           | times: 100.0
