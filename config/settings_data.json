@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/LOGO_BLACK_BUBBA_5.jpg",
@@ -100,7 +109,7 @@
     "sold_out_badge_color_scheme": "scheme-3",
     "social_facebook_link": "https:\/\/www.facebook.com\/bubbablack3x05\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/blackbubba.cl\/?hl=es",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@bubbablack",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC79t5jglmILRn1ZZwiIQ58w\/about",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
