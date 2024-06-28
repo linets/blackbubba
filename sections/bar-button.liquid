@@ -1,0 +1,103 @@
+<style>
+  .bar-content{
+    padding: 50px 0;
+  }
+  .bar-content a{
+    color: {{ section.settings.btn_color_text }};
+    background: {{ section.settings.btn_color_bg }};
+    display: block;
+    width: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .bar-content h2{
+    color: {{ section.settings.bar_color_text }};
+    background: {{ section.settings.bar_color_bg }};
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 30px;
+    margin: 50px 0 0;
+  }
+  @media screen and (max-width: 750px){
+    .bar-content h2{
+      font-size: 20px;
+      padding: 20px;
+    }
+    .bar-content a{
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+  }
+</style>
+<div class="bar-content">
+  {% if section.settings.btn_text != blank %}
+    <a href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+  {% endif %}
+
+  {% if section.settings.bar_text != blank %}
+    <h2>{{ section.settings.bar_text }}</h2>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Bar Button",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "btn_color_bg",
+      "label": "Button Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "btn_color_text",
+      "label": "Button Text Color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "bar_text",
+      "label": "Bar Text"
+    },
+    {
+      "type": "color",
+      "id": "bar_color_bg",
+      "label": "Bar Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "bar_color_text",
+      "label": "Bar Text Color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bar Button"
+    }
+  ]
+}
+{% endschema %}

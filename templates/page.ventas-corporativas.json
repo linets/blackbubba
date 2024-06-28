@@ -2,13 +2,206 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_crX4Xh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_twc3Aq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>VENTAS CORPORATIVAS<\/strong>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_twc3Aq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "color_text": "#0a0b0c",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_2_PpVgM7": {
+      "type": "image-banner-2",
+      "blocks": {
+        "heading_FFxibJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "EN BLACK PODRAS ENCONTRAR TODOS LOS PRODUCTS PARA TU EMPRESA Y TRABAJADORES",
+            "heading_size": "h1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "heading_HiFnAd": {
+          "type": "heading",
+          "settings": {
+            "heading": "DESCUBRE LAS MEJORES SOLUCIONES Y PRECIOS QUE TENEMOS PARA TI",
+            "heading_size": "h2",
+            "heading_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FFxibJ",
+        "heading_HiFnAd"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VC_2.jpg",
+        "image_url": "",
+        "desktop_video": "",
+        "image_overlay_opacity": 0,
+        "margin_bottom": 40,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "not_full_width": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_video": "",
+        "mobile_content_horizontal_alignment": "center",
+        "mobile_content_vertical_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "divisor_eF9iQG": {
+      "type": "divisor",
+      "settings": {
+      }
+    },
+    "content_cards_xnKaQH": {
+      "type": "content-cards",
+      "blocks": {
+        "card_pQmjwy": {
+          "type": "card",
+          "settings": {
+            "content": "1. REVISA NUESTROS PRODUCTOS EN LA PAGINA WEB",
+            "content_color": "#000000",
+            "btn_text": "",
+            "btn_url": "",
+            "btn_color_bg": "#000000",
+            "btn_color_text": "#ffffff",
+            "card_bg_color": "#545454"
+          }
+        },
+        "card_N6PQrD": {
+          "type": "card",
+          "settings": {
+            "content": "2. RELLENA EL FORMULARIO",
+            "content_color": "#000000",
+            "btn_text": "COTIZAR",
+            "btn_url": "shopify:\/\/pages\/contactanos",
+            "btn_color_bg": "#000000",
+            "btn_color_text": "#ffffff",
+            "card_bg_color": "#929090"
+          }
+        },
+        "card_4imizM": {
+          "type": "card",
+          "settings": {
+            "content": "3. NUESTRO EQUIPO SE CONTACTARA EN LA BREVEDAD",
+            "content_color": "#000000",
+            "btn_text": "",
+            "btn_url": "",
+            "btn_color_bg": "#000000",
+            "btn_color_text": "#ffffff",
+            "card_bg_color": "#d9d9d9"
+          }
+        }
+      },
+      "block_order": [
+        "card_pQmjwy",
+        "card_N6PQrD",
+        "card_4imizM"
+      ],
+      "settings": {
+        "bottom_text": "<p>CUALQUIER DUDA O PROBLEMA PUEDES COMUNICARTE A CORPORATIVA@BUBBA-BAGS.COM<\/p>",
+        "bottom_text_color": "#000000"
+      }
+    },
+    "divisor_G77aG8": {
+      "type": "divisor",
+      "settings": {
+      }
+    },
+    "bar_button_QnqWpD": {
+      "type": "bar-button",
+      "settings": {
+        "btn_text": "CONOCE NUESTRAS POLITICAS",
+        "btn_url": "shopify:\/\/pages\/politicas-venta-corporativa",
+        "btn_color_bg": "#000000",
+        "btn_color_text": "#ffffff",
+        "bar_text": "MOCHILA - BANANOS - BOTELLAS - MALETAS - BOLSOS",
+        "bar_color_bg": "#545454",
+        "bar_color_text": "#ffffff"
+      }
+    },
+    "image_banner_2_n9DQTp": {
+      "type": "image-banner-2",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VC_2.jpg",
+        "image_url": "",
+        "desktop_video": "",
+        "image_overlay_opacity": 0,
+        "margin_bottom": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "not_full_width": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_video": "",
+        "mobile_content_horizontal_alignment": "center",
+        "mobile_content_vertical_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "divisor_hqaY6V": {
+      "type": "divisor",
+      "settings": {
+      }
+    },
+    "image_content_EAypmr": {
+      "type": "image-content",
+      "settings": {
+        "title": "GIFT CARD CORPORATIVA",
+        "title_color": "#000000",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-06_085045.png",
+        "text_content": "<p>ELIGE REGALAR UNA <strong>GIFCARD BLACK <\/strong>A TUS TRABAJADORES.<br\/><br\/>COMPLETA EL FORMULARIO Y TE CONTACTAREMOS<\/p>",
+        "btn_text": "COTIZA AQUI",
+        "btn_url": "shopify:\/\/pages\/contactanos",
+        "btn_color_bg": "#000000",
+        "btn_color_text": "#ffffff"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_crX4Xh",
+    "image_banner_2_PpVgM7",
+    "divisor_eF9iQG",
+    "content_cards_xnKaQH",
+    "divisor_G77aG8",
+    "bar_button_QnqWpD",
+    "image_banner_2_n9DQTp",
+    "divisor_hqaY6V",
+    "image_content_EAypmr"
   ]
 }

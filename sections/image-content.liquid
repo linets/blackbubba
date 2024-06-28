@@ -1,0 +1,145 @@
+<style>
+  .image-content-container{
+    padding: 50px 0;
+  }
+  .image-content-container h2{
+    color: {{ section.settings.title_color }};
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .image-content-container .content{
+    display: flex;
+    align-items: center;
+  }
+  .image-content-container .button_text_content{
+    max-width: 390px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .image-content-container .button_text_content .text_content p{
+    font-size: 30px;
+    line-height: 3rem;
+  }
+  .image-content-container .button_text_content a{
+    color: {{ section.settings.btn_color_text }};
+    background: {{ section.settings.btn_color_bg }};
+    display: block;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .image-content-container .content .image{
+    width: 50%;
+  }
+  .image-content-container .content .image img{
+    width: 100%;
+  }
+  @media screen and (max-width: 750px){
+
+    .image-content-container .content{
+      flex-direction: column;
+    }
+    .image-content-container h2{
+      font-size: 30px;
+    }
+    .image-content-container .content .image{
+      width: 100%;
+    }
+    .image-content-container .button_text_content .text_content p{
+      font-size: 20px;
+      line-height: 2rem;
+    }
+    .image-content-container {
+      padding: 30px 20px;
+    }
+  }
+</style>
+<div class="image-content-container page-width">
+  {% if section.settings.title %}
+    <h2>{{ section.settings.title }}</h2>
+  {% endif %}
+  <div class="content">
+    {% if section.settings.image %}
+      <div class="image">
+        <img src="{{ section.settings.image | img_url: "master" }}" loading="lazy">
+      </div>
+    {% endif %}
+    {% if section.settings.text_content != blank or section.settings.btn_text != blank %}
+      <div class="button_text_content">
+        {% if section.settings.text_content != blank %}
+          <div class="text_content">
+            {{ section.settings.text_content }}
+          </div>
+        {% endif %}
+        {% if section.settings.btn_text != blank %}
+          <a href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image + Content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "text_content",
+      "label": "Text Content"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "btn_color_bg",
+      "label": "Button Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "btn_color_text",
+      "label": "Button Text Color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image + Content"
+    }
+  ]
+}
+{% endschema %}

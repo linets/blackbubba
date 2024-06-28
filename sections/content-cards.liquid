@@ -1,0 +1,164 @@
+<style>
+  .cards_content{
+    padding: 50px 0;
+  }
+  .cards_content .cards_container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cards_content .cards_container .card{
+    min-height: 600px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 7%;
+    line-height: 3rem;
+  }
+  .cards_content .cards_container .card a{
+    font-weight: 400;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    width: 150px;
+    font-size: 20px;
+    margin: 20px auto 0;
+  }
+  .cards_content .bottom_text{
+    color: {{ section.settings.bottom_text_color }};
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 750px){
+    .cards_content{
+      padding: 30px 20px;
+    }
+    .cards_content .cards_container{
+      flex-direction: column;
+    }
+    .cards_content .cards_container .card{
+      min-height: 300px;
+      width: 100%;
+    }
+    .cards_content .cards_container .card a.visibility-hidden{ display: none; }
+  }
+</style>
+<div class="cards_content page-width">
+  {% if section.blocks.size > 0 %}
+    <div class="cards_container">
+      {% for block in section.blocks %}
+        <div
+          class="card"
+          style="color: {{ block.settings.content_color }}; background: {{ block.settings.card_bg_color }};"
+        >
+          <div class="content-card">
+            {% if block.settings.content != blank %}
+              {{ block.settings.content }}
+            {% endif %}
+            <a
+              {% if block.settings.btn_text == blank %}
+                class="visibility-hidden"
+              {% endif %}
+              style="border: 1px solid {{ block.settings.btn_color_text }}; color: {{ block.settings.btn_color_text }}; background: {{ block.settings.btn_color_bg }};"
+              href="{{ block.settings.btn_url }}"
+            >
+              {{- block.settings.btn_text -}}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if section.settings.bottom_text != blank %}
+    <div class="bottom_text">
+      {{ section.settings.bottom_text }}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Content Cards",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Bottom Text"
+    },
+    {
+      "type": "color",
+      "id": "bottom_text_color",
+      "label": "Bottom Text Color",
+      "default": "#000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "content_color",
+          "label": "Content Color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "color",
+          "id": "btn_color_bg",
+          "label": "Button Background Color",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "btn_color_text",
+          "label": "Button Text Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "card_bg_color",
+          "label": "Card Background Color",
+          "default": "#000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content Cards"
+    }
+  ]
+}
+{% endschema %}
