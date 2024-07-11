@@ -40,15 +40,15 @@
         "slide_kb6hxF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_2_3443235a-2671-4255-b917-cb0108831f45.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_1_1.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_2_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_2_1.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/fw24",
+            "link": "shopify:\/\/collections\/sale",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "rgba(0,0,0,0)",
             "btn_color_border": "#ffffff",
