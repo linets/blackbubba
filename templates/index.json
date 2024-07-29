@@ -39,6 +39,7 @@
         },
         "slide_GxC9fH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Slider_2000x700_2.png",
             "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_13.jpg",
@@ -65,15 +66,15 @@
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_3.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_4.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_d0cb9980-3874-45b3-b40b-a88d5b336e50.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_997494c5-19af-42f9-b47b-2516bd55f6ab.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/mochilas-de-deporte",
+            "link": "shopify:\/\/collections\/fw24",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#000000",
             "btn_color_border": "#ffffff",
