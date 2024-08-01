@@ -64,6 +64,7 @@
         },
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Slider_2000x900_copia_4fecdda4-bfb9-428e-aa05-0241a00647e4.jpg",
             "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_copia_2b2f4510-0f27-4c17-851a-8e92c3aef82a.jpg",
