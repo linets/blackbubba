@@ -40,15 +40,15 @@
         "slide_wB9RPK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider_2000x700_8.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_9.jpg",
+            "image": "shopify:\/\/shop_images\/Slider_2000x700_10.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Slider_500x700_11.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/mugs",
+            "link": "shopify:\/\/collections\/billeteras",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#ffffff",
             "btn_color_border": "#ffffff",
