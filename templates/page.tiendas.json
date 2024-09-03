@@ -116,11 +116,11 @@
         "location_Rafe6U": {
           "type": "location",
           "settings": {
-            "location": "",
-            "schedule": "",
-            "address": "",
-            "btn_label": "",
-            "btn_url": ""
+            "location": "BLACK ARICA",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:30<\/p><p>Domingos: 11:00 a 20:00<\/p>",
+            "address": "<p><strong>Av. Diego Portales 640, Arica<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https:\/\/www.google.com\/maps\/place\/Av.+Diego+Portales+640,+Arica,+Arica+y+Parinacota\/@-18.4702474,-70.3093516,17z\/data=!3m1!4b1!4m6!3m5!1s0x915aa9bcacd72877:0xa1fb59edd4d28c9a!8m2!3d-18.4702474!4d-70.3067767!16s%2Fg%2F11hdf8rlfb?entry=ttu"
           }
         }
       },
