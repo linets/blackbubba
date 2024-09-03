@@ -96,11 +96,11 @@
         "location_zEYYPr": {
           "type": "location",
           "settings": {
-            "location": "",
-            "schedule": "",
-            "address": "",
-            "btn_label": "",
-            "btn_url": ""
+            "location": "LA DEHESA",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sábados: 09:00 a 17:00<\/p><p>Domingos: cerrados<\/p>",
+            "address": "<p><strong>Av. La Dehesa 181, Lo Barnechea<\/strong><\/p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https:\/\/maps.app.goo.gl\/FZNdK2DJQSLHTwiF6"
           }
         },
         "location_JjGXXG": {
