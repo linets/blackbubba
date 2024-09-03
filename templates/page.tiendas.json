@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -83,6 +92,36 @@
             "btn_label": "VER MAPA",
             "btn_url": "https:\/\/maps.app.goo.gl\/4kHjsfhcYgNq2u7A7"
           }
+        },
+        "location_zEYYPr": {
+          "type": "location",
+          "settings": {
+            "location": "",
+            "schedule": "",
+            "address": "",
+            "btn_label": "",
+            "btn_url": ""
+          }
+        },
+        "location_JjGXXG": {
+          "type": "location",
+          "settings": {
+            "location": "",
+            "schedule": "",
+            "address": "",
+            "btn_label": "",
+            "btn_url": ""
+          }
+        },
+        "location_Rafe6U": {
+          "type": "location",
+          "settings": {
+            "location": "",
+            "schedule": "",
+            "address": "",
+            "btn_label": "",
+            "btn_url": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +131,10 @@
         "location_eDxRLN",
         "location_4i8JFT",
         "location_XzrL4i",
-        "location_imQtkj"
+        "location_imQtkj",
+        "location_zEYYPr",
+        "location_JjGXXG",
+        "location_Rafe6U"
       ],
       "settings": {
         "title": "Nuestras Tiendas"
