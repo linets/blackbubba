@@ -12,23 +12,23 @@
     "3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c": {
       "type": "slideshow",
       "blocks": {
-        "slide_jhrcNK": {
+        "slide_kb6hxF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DESKTOP_CYRUS.jpg",
-            "image_mobile": "shopify://shop_images/MOBILE_CYRUS.jpg",
+            "image": "shopify://shop_images/BANNER_YOHO.jpg",
+            "image_mobile": "shopify://shop_images/BANNER_YOHO2.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify://collections/cyrus",
+            "link": "shopify://collections/yoho",
             "btn_color_text": "#ffffff",
-            "btn_color_bg": "#000000",
+            "btn_color_bg": "rgba(0,0,0,0)",
             "btn_color_border": "#ffffff",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
+            "button_style_secondary": true,
+            "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -62,24 +62,23 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_kb6hxF": {
+        "slide_jhrcNK": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/BANNER_YOHO.jpg",
-            "image_mobile": "shopify://shop_images/BANNER_YOHO2.jpg",
+            "image": "shopify://shop_images/DESKTOP_CYRUS.jpg",
+            "image_mobile": "shopify://shop_images/MOBILE_CYRUS.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify://collections/yoho",
+            "link": "shopify://collections/cyrus",
             "btn_color_text": "#ffffff",
-            "btn_color_bg": "rgba(0,0,0,0)",
+            "btn_color_bg": "#000000",
             "btn_color_border": "#ffffff",
-            "button_style_secondary": true,
-            "box_align": "bottom-center",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -142,9 +141,9 @@
         }
       },
       "block_order": [
-        "slide_jhrcNK",
-        "slide_GxC9fH",
         "slide_kb6hxF",
+        "slide_GxC9fH",
+        "slide_jhrcNK",
         "slide_wB9RPK",
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1"
       ],
