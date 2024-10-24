@@ -12,6 +12,31 @@
     "3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c": {
       "type": "slideshow",
       "blocks": {
+        "slide_GxC9fH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Copia_de_BANNER_75a90579-29eb-4e11-b5c5-d1c57e6aeaa9.jpg",
+            "image_mobile": "shopify://shop_images/Copia_de_BANNER2_33542302-d5ed-4292-bdaf-77879d10c941.jpg",
+            "desktop_video": "",
+            "mobile_video": "",
+            "tag": "",
+            "heading": "",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/trajes-de-bano",
+            "btn_color_text": "#ffffff",
+            "btn_color_bg": "#ffffff",
+            "btn_color_border": "#ffffff",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "box_max_width": 100,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
@@ -54,31 +79,6 @@
             "btn_color_border": "#ffffff",
             "button_style_secondary": true,
             "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "box_max_width": 100,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_GxC9fH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_VISCOSAS_WEB.jpg",
-            "image_mobile": "shopify://shop_images/BANNER_VISCOSAS_MOBILE.jpg",
-            "desktop_video": "",
-            "mobile_video": "",
-            "tag": "",
-            "heading": "",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/camisas",
-            "btn_color_text": "#ffffff",
-            "btn_color_bg": "#ffffff",
-            "btn_color_border": "#ffffff",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -141,9 +141,9 @@
         }
       },
       "block_order": [
+        "slide_GxC9fH",
         "slide_jhrcNK",
         "slide_kb6hxF",
-        "slide_GxC9fH",
         "slide_wB9RPK",
         "template--16708066443427__3cfa5f99-8b8a-4128-9fd9-305ec0d48c0c-slide-1"
       ],
