@@ -65,15 +65,15 @@
         "slide_jhrcNK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Copia_de_BANNER.jpg",
-            "image_mobile": "shopify://shop_images/BANNER_MOBILE.jpg",
+            "image": "shopify://shop_images/BANNER_ACCESORIOS3.jpg",
+            "image_mobile": "shopify://shop_images/BANNER_ACCESORIOS_corr2.jpg",
             "desktop_video": "",
             "mobile_video": "",
             "tag": "",
             "heading": "",
             "subheading": "",
             "button_label": "",
-            "link": "shopify://collections/camisas",
+            "link": "shopify://collections/accesorios",
             "btn_color_text": "#ffffff",
             "btn_color_bg": "#000000",
             "btn_color_border": "#ffffff",
