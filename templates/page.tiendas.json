@@ -105,7 +105,7 @@
           "type": "location",
           "settings": {
             "location": "Vespucio",
-            "schedule": "<p>Lunes a Domingo: 10:00 a 20:30</p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sábados: 10:00 a 20:30</p><p>Domingos: 10:00 a 20:30</p>",
             "address": "<p><strong>Av vicuña Mackena Oriente N° 7110</strong></p>",
             "btn_label": "VER MAPA",
             "btn_url": "https://www.google.com/maps/place/Av.+Vicu%C3%B1a+Mackenna+7110,+8240000+La+Florida,+Regi%C3%B3n+Metropolitana/@-33.5185047,-70.6086349,15z/data=!4m6!3m5!1s0x9662d060ac441ff5:0x87f15c4df2dd1b34!8m2!3d-33.5185051!4d-70.5983566!16s%2Fg%2F11gr7xzy55?entry=ttu"
@@ -114,7 +114,7 @@
         "location_Rafe6U": {
           "type": "location",
           "settings": {
-            "location": "BLACK ARICA",
+            "location": "Arica",
             "schedule": "<p>Lunes a Jueves: 10:00 a 20:00</p><p>Viernes y Sabados: 10:00 a 20:30</p><p>Domingos: 11:00 a 20:00</p>",
             "address": "<p><strong>Av. Diego Portales 640, Arica</strong></p>",
             "btn_label": "VER MAPA",
