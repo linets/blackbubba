@@ -54,7 +54,7 @@
         "location_eDxRLN": {
           "type": "location",
           "settings": {
-            "location": "BLACK  ALTO LAS CONDES",
+            "location": "Alto Las Condes",
             "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sabados: 10:00 a 21:00</p><p>Domingos: 10:00 a 20:30</p>",
             "address": "<p><strong>Av Kennedy 9001,local 3137</strong></p>",
             "btn_label": "VER MAPA",
