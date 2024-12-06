@@ -1,20 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -27,100 +25,110 @@
           "type": "location",
           "settings": {
             "location": "BLACK  MARINA ARAUCO",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:30<\/p><p>Domingo: 10:00 a 20:00<\/p>",
-            "address": "<p><strong>Av Libertad Mall Marina Arauco 1348, local 102<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00</p><p>Viernes y Sabados: 10:00 a 20:30</p><p>Domingo: 10:00 a 20:00</p>",
+            "address": "<p><strong>Av Libertad Mall Marina Arauco 1348, local 102</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/LTBQUeJWgbULCvuT7"
+            "btn_url": "https://maps.app.goo.gl/LTBQUeJWgbULCvuT7"
           }
         },
         "location_4w6ypp": {
           "type": "location",
           "settings": {
             "location": "BLACK  PARQUE ARAUCO",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 11:00 a 20:30<\/p>",
-            "address": "<p><strong>Av Kennedy 5413, local 137 A<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sabados: 10:00 a 21:00</p><p>Domingos: 11:00 a 20:30</p>",
+            "address": "<p><strong>Av Kennedy 5413, local 137 A</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/rMhm5oZRgtQWRVhe8"
+            "btn_url": "https://maps.app.goo.gl/rMhm5oZRgtQWRVhe8"
           }
         },
         "location_3AXQ8H": {
           "type": "location",
           "settings": {
             "location": "BLACK  COSTANERA",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 10:00 a 20:30<\/p>",
-            "address": "<p><strong>Andres Bello 2447, local 2184<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sabados: 10:00 a 21:00</p><p>Domingos: 10:00 a 20:30</p>",
+            "address": "<p><strong>Andres Bello 2447, local 2184</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/28GWvvS5LR1zdnVD6"
+            "btn_url": "https://maps.app.goo.gl/28GWvvS5LR1zdnVD6"
           }
         },
         "location_eDxRLN": {
           "type": "location",
           "settings": {
             "location": "BLACK  ALTO LAS CONDES",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 10:00 a 20:30<\/p>",
-            "address": "<p><strong>Av Kennedy 9001,local 3137<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sabados: 10:00 a 21:00</p><p>Domingos: 10:00 a 20:30</p>",
+            "address": "<p><strong>Av Kennedy 9001,local 3137</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/8XAymVAKc5wvjvco6"
+            "btn_url": "https://maps.app.goo.gl/8XAymVAKc5wvjvco6"
           }
         },
         "location_4i8JFT": {
           "type": "location",
           "settings": {
             "location": "BLACK  TREBOL",
-            "schedule": "<p>Lunes a Jueves: 10:30 a 20:30<\/p><p>Viernes y Sabados: 10:30 a 21:00<\/p><p>Domingos: 10:00 a 20:00<\/p>",
-            "address": "<p><strong>Av Jorge Alessandri 31776, local E-103, E-104<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:30 a 20:30</p><p>Viernes y Sabados: 10:30 a 21:00</p><p>Domingos: 10:00 a 20:00</p>",
+            "address": "<p><strong>Av Jorge Alessandri 31776, local E-103, E-104</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/hs1r3hQD9qPHV2RSA"
+            "btn_url": "https://maps.app.goo.gl/hs1r3hQD9qPHV2RSA"
           }
         },
         "location_XzrL4i": {
           "type": "location",
           "settings": {
             "location": "BLACK  PORTAL LA DEHESA",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30<\/p><p>Viernes y Sabados: 10:00 a 21:00<\/p><p>Domingos: 10:00 a 20:30<\/p>",
-            "address": "<p><strong>Av La Dehesa 1445, local 1089<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:30</p><p>Viernes y Sabados: 10:00 a 21:00</p><p>Domingos: 10:00 a 20:30</p>",
+            "address": "<p><strong>Av La Dehesa 1445, local 1089</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/xRaoAWKnsM81g1yx6"
+            "btn_url": "https://maps.app.goo.gl/xRaoAWKnsM81g1yx6"
           }
         },
         "location_imQtkj": {
           "type": "location",
           "settings": {
             "location": "BLACK  MUT",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:00<\/p><p>Domingos: 10:00 a 20:00<\/p>",
-            "address": "<p><strong>Av Apoquindo 2730, local 116<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00</p><p>Viernes y Sabados: 10:00 a 20:00</p><p>Domingos: 10:00 a 20:00</p>",
+            "address": "<p><strong>Av Apoquindo 2730, local 116</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/4kHjsfhcYgNq2u7A7"
+            "btn_url": "https://maps.app.goo.gl/4kHjsfhcYgNq2u7A7"
           }
         },
         "location_zEYYPr": {
           "type": "location",
           "settings": {
             "location": "LA DEHESA",
-            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00<\/p><p>Sábados: 09:00 a 17:00<\/p><p>Domingos: cerrados<\/p>",
-            "address": "<p><strong>Av. La Dehesa 181, Lo Barnechea<\/strong><\/p>",
+            "schedule": "<p>Lunes a Viernes: 9:00 a 19:00</p><p>Sábados: 09:00 a 17:00</p><p>Domingos: cerrados</p>",
+            "address": "<p><strong>Av. La Dehesa 181, Lo Barnechea</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/maps.app.goo.gl\/FZNdK2DJQSLHTwiF6"
+            "btn_url": "https://maps.app.goo.gl/FZNdK2DJQSLHTwiF6"
           }
         },
         "location_JjGXXG": {
           "type": "location",
           "settings": {
             "location": "BLACK VESPUCIO",
-            "schedule": "<p>Lunes a Domingo: 10:00 a 20:30<\/p>",
-            "address": "<p><strong>Av vicuña Mackena Oriente N° 7110<\/strong><\/p>",
+            "schedule": "<p>Lunes a Domingo: 10:00 a 20:30</p>",
+            "address": "<p><strong>Av vicuña Mackena Oriente N° 7110</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/www.google.com\/maps\/place\/Av.+Vicu%C3%B1a+Mackenna+7110,+8240000+La+Florida,+Regi%C3%B3n+Metropolitana\/@-33.5185047,-70.6086349,15z\/data=!4m6!3m5!1s0x9662d060ac441ff5:0x87f15c4df2dd1b34!8m2!3d-33.5185051!4d-70.5983566!16s%2Fg%2F11gr7xzy55?entry=ttu"
+            "btn_url": "https://www.google.com/maps/place/Av.+Vicu%C3%B1a+Mackenna+7110,+8240000+La+Florida,+Regi%C3%B3n+Metropolitana/@-33.5185047,-70.6086349,15z/data=!4m6!3m5!1s0x9662d060ac441ff5:0x87f15c4df2dd1b34!8m2!3d-33.5185051!4d-70.5983566!16s%2Fg%2F11gr7xzy55?entry=ttu"
           }
         },
         "location_Rafe6U": {
           "type": "location",
           "settings": {
             "location": "BLACK ARICA",
-            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00<\/p><p>Viernes y Sabados: 10:00 a 20:30<\/p><p>Domingos: 11:00 a 20:00<\/p>",
-            "address": "<p><strong>Av. Diego Portales 640, Arica<\/strong><\/p>",
+            "schedule": "<p>Lunes a Jueves: 10:00 a 20:00</p><p>Viernes y Sabados: 10:00 a 20:30</p><p>Domingos: 11:00 a 20:00</p>",
+            "address": "<p><strong>Av. Diego Portales 640, Arica</strong></p>",
             "btn_label": "VER MAPA",
-            "btn_url": "https:\/\/www.google.com\/maps\/place\/Av.+Diego+Portales+640,+Arica,+Arica+y+Parinacota\/@-18.4702474,-70.3093516,17z\/data=!3m1!4b1!4m6!3m5!1s0x915aa9bcacd72877:0xa1fb59edd4d28c9a!8m2!3d-18.4702474!4d-70.3067767!16s%2Fg%2F11hdf8rlfb?entry=ttu"
+            "btn_url": "https://www.google.com/maps/place/Av.+Diego+Portales+640,+Arica,+Arica+y+Parinacota/@-18.4702474,-70.3093516,17z/data=!3m1!4b1!4m6!3m5!1s0x915aa9bcacd72877:0xa1fb59edd4d28c9a!8m2!3d-18.4702474!4d-70.3067767!16s%2Fg%2F11hdf8rlfb?entry=ttu"
+          }
+        },
+        "location_MiAxQX": {
+          "type": "location",
+          "settings": {
+            "location": "Mall Plaza Antofagasta",
+            "schedule": "<p>Lunes a Jueves: 10:30 a 20:30</p><p>Viernes y Sábados: 10:30 a 21:00</p><p>Domingos: 11:00 a 20:00</p>",
+            "address": "<p><strong>Av. Balmaceda 2355, Antofagasta</strong></p>",
+            "btn_label": "VER MAPA",
+            "btn_url": "https://maps.app.goo.gl/xcmxA1fzGhzsybCPA"
           }
         }
       },
@@ -134,7 +142,8 @@
         "location_imQtkj",
         "location_zEYYPr",
         "location_JjGXXG",
-        "location_Rafe6U"
+        "location_Rafe6U",
+        "location_MiAxQX"
       ],
       "settings": {
         "title": "Nuestras Tiendas"
