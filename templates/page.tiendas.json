@@ -120,16 +120,6 @@
             "btn_label": "VER MAPA",
             "btn_url": "https://www.google.com/maps/place/Av.+Diego+Portales+640,+Arica,+Arica+y+Parinacota/@-18.4702474,-70.3093516,17z/data=!3m1!4b1!4m6!3m5!1s0x915aa9bcacd72877:0xa1fb59edd4d28c9a!8m2!3d-18.4702474!4d-70.3067767!16s%2Fg%2F11hdf8rlfb?entry=ttu"
           }
-        },
-        "location_MiAxQX": {
-          "type": "location",
-          "settings": {
-            "location": "Mall Plaza Antofagasta",
-            "schedule": "<p>Lunes a Jueves: 10:30 a 20:30</p><p>Viernes y Sábados: 10:30 a 21:00</p><p>Domingos: 11:00 a 20:00</p>",
-            "address": "<p><strong>Av. Balmaceda 2355, Antofagasta</strong></p>",
-            "btn_label": "VER MAPA",
-            "btn_url": "https://maps.app.goo.gl/xcmxA1fzGhzsybCPA"
-          }
         }
       },
       "block_order": [
@@ -142,8 +132,7 @@
         "location_imQtkj",
         "location_zEYYPr",
         "location_JjGXXG",
-        "location_Rafe6U",
-        "location_MiAxQX"
+        "location_Rafe6U"
       ],
       "settings": {
         "title": "Nuestras Tiendas"
